@@ -12,11 +12,11 @@ Features:
 
 Premium commands:
 
-:bring . //brings non premium FlameX users to you
-:kill . //kills non premium FlameX users to you
-:kick . //kicks non premium FlameX users to you
-:ban . //(fake) bans non premium FlameX users to you
-:freeze . //freezes non premium FlameX users to you
-:thaw . //unfreezes non premium FlameX users to you
+- :bring . //brings non premium FlameX users to you
+- :kill . //kills non premium FlameX users to you
+- :kick . //kicks non premium FlameX users to you
+- :ban . //(fake) bans non premium FlameX users to you
+- :freeze . //freezes non premium FlameX users to you
+- :thaw . //unfreezes non premium FlameX users to you
 
 and more to come!
