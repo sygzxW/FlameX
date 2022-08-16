@@ -1,6 +1,5 @@
-Admins = {
+mods = {
     3704644462, -- tfujstaryaimstar
     532976710, -- sygzx WWWWW
     416218634 -- sarawalton2
 }
-return Admins
