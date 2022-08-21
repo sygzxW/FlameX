@@ -1,9 +1,10 @@
 MODS = {
-    [3704644462] = true; -- tfujstaryaimstar
+    [1] = true; -- drk
+    [1] = true; -- sara
 }
 
-OWNER = {
-    --[000] = false;
+ADMIN = {
+    [3704644462] = true; -- tfujstaryaimstar
 }
 
 function initiateNames()
@@ -16,7 +17,7 @@ function initiateNames()
             if table.find(MODS, v.UserId) then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
-            if table.find(OWNER, v.UserId) then
+            if table.find(ADMIN, v.UserId) then
                 v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
             end
         end
