@@ -1,6 +1,5 @@
 MODS = {
-    [1] = true; -- drk
-    [1] = true; -- sara
+    [https://www.roblox.com/users/3704644462/profile] = true; -- staryaimstar
 }
 
 ADMIN = {
