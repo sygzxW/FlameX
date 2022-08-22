@@ -1,5 +1,5 @@
 MODS = {
-    [https://www.roblox.com/users/3704644462/profile] = true; -- staryaimstar
+    [3704644462] = true; -- staryaimstar
 }
 
 ADMIN = {
