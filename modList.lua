@@ -1,27 +1,38 @@
-MODS = {
-    [1423817372] = true; -- zynanox
+ModIDS = {
+    1423817372, -- zynanox
 }
 
-ADMIN = {
-    [0] = true; -- zynanox
+Crown = {
+    3177298028,
+    601414537,
 }
 
-function initiateNames()
-    game.Players.LocalPlayer.Character.UpperTorso:FindFirstChild('OriginalSize'):Destroy()
-    for _,v in pairs(game:GetService('Players'):GetPlayers()) do
-        if v.Character then
-            if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+--\\ Don't mess with anything below this
+function flamexnames()
+for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+    if table.find(ModIDS, Player.UserId) then
+        if Player.Character then
+            if Player.Character.Parent.Name == 'Players' then
+                Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
             end
-            if MODS[v.UserId] then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+        end
+    elseif
+        table.find(Crown, Player.UserId) then
+        if Player.Character then
+            if Player.Character.Parent.Name == 'Players' then
+                Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑]' .. Player.DisplayName)
             end
-            if ADMIN[v.UserId] then
-                v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👑] ' .. v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName)
+        end
+    if
+        Player.Character then
+        if Player.Character.Parent.Name == 'Players' then
+            if not Player.Character.UpperTorso:FindFirstChild('OriginalSize') then
+                Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[😎]' .. Player.DisplayName)
             end
         end
     end
 end
-
-local successful, errored = pcall(initiateNames)
-return MODS
+end
+end
+local success,err = pcall(flamexnames)
+return ModIDS
