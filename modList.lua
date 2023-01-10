@@ -1,5 +1,5 @@
 ModIDS = {
-    1423817372, -- zynanox
+    3870466648, -- zynanox
 }
 
 Crown = {
